@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+layout:decorate="~{layouts/homeLayout}">
+<head>
+
+</head>
+<body>
+	<div layout:fragment="home-content">
+	  <div style="height:300px;overflow:scroll;">
+		<table class="table table-striped table-bordered b-table" >
+			<thead class="thead-dark">
+				<th>id</th>
+				<th>title</th>
+			</thead>
+			<tbody>
+				<tr th:each="product : ${products}">
+					<td th:text="${product.id}"></td>
+					<td th:text="${product.name}"></td>
+				</tr>
+			</tbody>
+		</table>
+	  </div>
+	  
+	  <pre>aaaaaaaaaaaaaaaaaa
+	  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	  bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  d
+	  cccccccccccccccccccccccccccccccccccc
+	  </pre>
+  </div>
+	
+</body>
+</html>
